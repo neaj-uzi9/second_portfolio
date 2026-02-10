@@ -72,3 +72,23 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+
+/*EmailJs */
+
+emailjs.init("PUBLIC_KEY");
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "SERVICE_ID",
+        "TEMPLATE_ID",
+        this
+    ).then(() => {
+        alert("Message sent successfully!");
+        this.reset();
+    }, () => {
+        alert("Failed to send message");
+    });
+});

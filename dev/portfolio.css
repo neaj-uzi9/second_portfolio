@@ -500,3 +500,56 @@ span{
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/*projects section styling*/
+
+.projects {
+    background: var(--bg-color);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-box {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.project-box img {
+    width: 100%;
+    transition: 0.4s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,.6), var(--main-color));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s ease;
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-box:hover .project-layer {
+    opacity: 1;
+}
+
+.project-layer i {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
