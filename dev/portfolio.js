@@ -76,14 +76,14 @@ window.addEventListener("scroll", () => {
 
 /*EmailJs */
 
-emailjs.init("PUBLIC_KEY");
+emailjs.init("9R-6_6xH2JkT2FAdn");
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "SERVICE_ID",
-        "TEMPLATE_ID",
+        "service_3n55lvs",
+        "template_oj198k2",
         this
     ).then(() => {
         alert("Message sent successfully!");
