@@ -76,14 +76,23 @@ window.addEventListener("scroll", () => {
 
 /*EmailJs */
 
+<<<<<<< HEAD:portfolio.js
 emailjs.init("PUBLIC_KEY");
+=======
+emailjs.init("9R-6_6xH2JkT2FAdn");
+>>>>>>> release/1.0.1:dev/portfolio.js
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
+<<<<<<< HEAD:portfolio.js
         "SERVICE_ID",
         "TEMPLATE_ID",
+=======
+        "service_3n55lvs",
+        "template_oj198k2",
+>>>>>>> release/1.0.1:dev/portfolio.js
         this
     ).then(() => {
         alert("Message sent successfully!");
@@ -91,4 +100,8 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     }, () => {
         alert("Failed to send message");
     });
+<<<<<<< HEAD:portfolio.js
 });
+=======
+});
+>>>>>>> release/1.0.1:dev/portfolio.js
