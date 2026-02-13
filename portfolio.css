@@ -31,7 +31,6 @@ body.dark {
 body{
     background: var(--bg-color);
     color: var(--text-color);
-    padding-top: 80px;
 }
 
 section{
@@ -39,10 +38,9 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-.header{
+header{
     position: fixed;
     width: 100%;
-    height: 80px;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -101,6 +99,7 @@ section{
     height: 25rem;
     border-radius: 50%;
     object-fit: cover;
+    /*border: 5px solid var(--main-color);*/
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     animation: floatImage 4s ease-in-out infinite;
@@ -400,11 +399,7 @@ span{
     }
 }
 
-/*@media (max-width: 991px) {
-    
-}*/
-
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .header{
         padding: 2rem 3%;
     }
@@ -421,7 +416,9 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+}
 
+@media (max-width: 991px){
     #menu-icone{
         display: block;
     }
@@ -439,11 +436,11 @@ span{
         background: rgba(0, 127, 115, 0.9);
 
     }
-    /*.navbar a{
+    .navbar a{
         display: block;
         padding: 17px;
         font-size: 22px;
-    }*/
+    }
     .navbar.active{
         right: 0;
     }
@@ -460,9 +457,10 @@ span{
         order: 2;
         margin-left: 1rem;
     }
-    .home-img img{
-        width: 25rem;
-        margin-top: 8rem;
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
     .about {
         flex-direction: column-reverse;
     }
@@ -475,46 +473,14 @@ span{
     }
 }
 
-/*-----home-----*/
-@media (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-content {
-        margin-left: 0;
-    }
-
-    .home-content h1 {
-        font-size: 3.2rem;
-    }
-
-    .home-content h3 {
-        font-size: 2rem;
-    }
-    .home-img img{
-        width: 25rem;
-        margin-top: 8rem;
-    }
-}
-
-
-
-
-
 @media (max-width: 617px){
     .home-img img{
-        width: 25rem;
+        width: 70vw;
         margin-top: 8rem;
     }
     .about-imge img {
         width: 70vw;
         margin-top: 4rem;
-    }
-    .about-imge img{
-        width: 25rem;
-        margin-top: 8rem;
     }
 }
 
@@ -586,8 +552,4 @@ span{
 .project-layer i {
     font-size: 2.5rem;
     margin-top: 1rem;
-<<<<<<< HEAD:portfolio.css
 }
-=======
-}
->>>>>>> release/1.0.1:dev/portfolio.css
